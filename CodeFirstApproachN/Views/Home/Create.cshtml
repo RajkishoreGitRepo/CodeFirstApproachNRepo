@@ -1,0 +1,32 @@
+﻿@model CodeFirstApproachN.Models.Student
+
+<h2 class="mb-4">Create Student</h2>
+
+<form asp-action="Create" method="post" class="container" style="max-width:500px;">
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Gender" class="form-label"></label>
+        <input asp-for="Gender" class="form-control" placeholder="Enter gender" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label"></label>
+        <input asp-for="Age" type="number" class="form-control" placeholder="Enter age" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Standard" class="form-label"></label>
+        <input asp-for="Standard" class="form-control" placeholder="Enter standard" />
+    </div>
+
+    <div class="text-end">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+
+</form>
