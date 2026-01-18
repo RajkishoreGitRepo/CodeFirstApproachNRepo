@@ -13,5 +13,6 @@ namespace CodeFirstApproachN.Models
         public string? Gender { get; set; }
         public int Age { get; set; }
         public string? Standard { get; set; }
+        public string MyProperty { get; set; }
     }
 }
